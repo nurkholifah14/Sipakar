@@ -16,9 +16,9 @@ class DiagnosaController extends Controller
     {
         // $data["gejalakulit"] = Gejalakulit::get();
 
-        return view("diagnosa.index", [
-          "title" => "Diagnosa"
-        ], $data);
+        $gejala=Gejalakulit::where('kode_gejala','G01')->first();
+        
+        return view("diagnosa.index", compact('gejala'));
     }
 
     /**

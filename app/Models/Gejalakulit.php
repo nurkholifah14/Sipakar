@@ -12,4 +12,10 @@ class Gejalakulit extends Model
     protected $table = 'gejalakulit';
 
     protected $guarded = [];
+
+    public $fillable = [
+        'id',
+        'kode_gejala',
+        'nama_gejala',
+    ];
 }
