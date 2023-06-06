@@ -14,7 +14,7 @@ class DiagnosaController extends Controller
      */
     public function index()
     {
-        // $data["gejalakulit"] = Gejalakulit::get();
+        // $data["gejalakulit"] = Gejalakulit::get();/a
 
         $gejala=Gejalakulit::where('kode_gejala','G01')->first();
         
